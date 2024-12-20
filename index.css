@@ -1,0 +1,309 @@
+
+
+
+
+/* General Reset */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-clr: #dffe02;
+    --gray-clr: #898989;
+    --dark-blue-clr: #171c22;
+}
+
+.bg-green {
+    background: var(--green-clr);
+}
+
+.bg-dark-blue {
+    background: var(--dark-blue-clr);
+}
+
+.txt-gray {
+    color: var(--gray-clr);
+}
+
+.txt-green {
+    color: var(--green-clr);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.mybtn {
+    border: .1rem solid var(--green-clr) !important;
+    padding: .5rem 1.6rem;
+}
+
+.mybtn:hover {
+    background: transparent;
+    color: var(--green-clr) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 2.2rem;
+}
+
+.image-container {
+    width: 30rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-top: 1rem solid white;
+    border-bottom: 1rem solid white;
+    background-image:url(images/about.jpeg) ;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 75%;
+    box-shadow: 0 0 1rem white, inset 0 0 1rem white,
+        0 0 2rem var(--green-clr),
+        inset 0 0 0rem var(--green-clr),
+        0 0 0rem var(--green-clr);
+}
+
+.hero-section {
+    min-height: 88vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.para {
+    max-width: 500px;
+}
+
+.main-txt {
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+.about-me {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.section-container {
+    padding-block: 4rem;
+}
+
+.glow {
+    position: relative;
+}
+ Progress Bar Styling
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
+ Gradient Effect for Stats Numbers 
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #48C78E, #5C6BC0);
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-clip-text {
+    background-clip: text;
+}
+
+
+
+
+.glow::before {
+    content: "";
+    background-color: var(--green-clr);
+    position: absolute;
+    inset: 4rem;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(70px);
+}
+
+.hover-card:hover {
+    scale: 1.2;
+    background: var(--green-clr);
+}
+
+.hover-card:hover * {
+    color: black !important;
+}
+
+.project-image {
+    min-width: 100%;
+    height: 230px;
+}
+
+.mycard {
+    width: 21rem;
+    margin: auto;
+}
+
+.mycard:hover {
+    scale: 1.1;
+}
+
+.my-form {
+    margin: auto;
+    max-width: 500px;
+}
+input {
+    width: 440px;
+}
+
+.my-message {
+    max-width: 590px;
+    width: 480px;
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 500px; 
+    padding: 30px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+        /* Style for the progress bar container */
+        .bg-dark {
+            background-color: #333;
+        }
+        
+        /* Style for the progress bar itself */
+        .progress-bar {
+            height: 10px; /* Height of the progress bar */
+            border-radius: 5px; /* Rounded corners for the progress bar */
+            background: linear-gradient(90deg, #FF66B2, #FF3399); /* Pink gradient */
+        }
+        
+        /* Optional: Animation for progress bar (if needed) */
+        .progress-bar {
+            transition: width 1s ease-in-out; /* Smooth transition for progress bar */
+        }
+        
+        /* To handle the full width of the progress bar container */
+        .col-8 {
+            padding: 0; /* Remove padding to make sure the progress bar takes the full width */
+        }
+        footer hr{
+            width: 50%;
+            height: 4px;
+            margin:20px 0;
+            background-color: gray;
+            border: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .icons-betel{
+            font-size: 2rem;
+        }
+        .icons-betel:hover{
+           scale: 1.4;
+           color: #FF7200;
+        }
+       
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 2.5rem; /
+    }
+
+    .image-container {
+        width: 20rem;
+    }
+
+    .hero-section {
+        min-height: 72vh;
+    }
+
+    .about-me {
+        width: 23rem;
+    }
+
+    .my-form {
+        width: auto;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 0.8rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .section-container {
+        padding-block: 2rem;  
+    }
+
+    .mycard {
+        width: 100%;  
+        margin-bottom: 2rem;
+    }
+
+    .project-image {
+        height: auto;  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
